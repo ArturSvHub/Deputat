@@ -1,0 +1,13 @@
+﻿@ChildContent
+<header>
+    <div class="header-flag" tabindex="1" autofocus>
+        <div class="navmenu-margin">
+            <NavMenu />
+        </div>
+    <MainHeader />
+    </div>
+</header>
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
