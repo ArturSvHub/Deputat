@@ -15,9 +15,9 @@
     padding: 0 5% 2% 0;
     font-size:2em;
 }
-.description h1{
-    font-size:3em;
-}
+    .description .surname {
+        font-size: 3em;
+    }
 .description h2 {
         font-size: 2em;
         margin-bottom:10%;
