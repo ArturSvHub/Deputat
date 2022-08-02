@@ -1,8 +1,53 @@
 ﻿@page "/reception";
-<section id="reception">
+@using Microsoft.Extensions.Logging
+@using Shultc.Data.Form
+@inject ILogger<Reception> Logger
+
+<section id="reception" class="onpage">
+    <div class="reception-form">
     <h3>Виртуальная приёмная</h3>
-<PageModel Color="gray"></PageModel>
+    <EditForm Model="@receptionForm" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <p class="form-group">
+            <label>Ваше имя: </label>
+                <InputText id="name"  class="form-control  form-control-lg reception-form-control" @bind-Value="receptionForm.Name"/>
+            
+        </p>
+        <p class="form-group row">
+            <label for="email">Ваше Email: 
+            </label>
+            <InputText id="email" class="form-control  form-control-lg reception-form-control" type="email" @bind-Value="receptionForm.Email"/>
+        </p>
+         <p class="form-group">
+            <label>Выберите тему сообщения: </label>
+                <InputSelect class="form-control form-control-lg reception-form-control" @bind-Value="receptionForm.Subject">
+                    <option value="" autofocus disabled>---Выберите тему сообщения---</option>
+                    <option value="Нарушение закона">Нарушение закона</option>
+                    <option value="Просьба">Просьба</option>
+                    <option value="Пожелание">Пожелание</option>
+                    <option value="Прочее">Прочее</option>
+                </InputSelect>
+            
+        </p>
+         <p class="form-group">
+            <label>Ваше сообщение: </label>
+                <InputTextArea class="form-control form-control-lg reception-form-control" @bind-Value="receptionForm.Message"/>
+            
+        </p>
+        <p class="form-group">
+            <label>Вы согласны с положением о персональных данных?: 
+                <InputCheckbox class="form-check-input " @bind-Value="receptionForm.IsAgreeWithContract"/>
+            </label>
+        </p>
+        <button class="btn btn-lg btn-success" type="submit">Написать</button>
+    </EditForm>
+    </div>
 </section>
 @code {
-
+    private ReceptionForm receptionForm = new(){SendMessageDate=DateTime.Now};
+    private void HandleValidSubmit()
+    {
+        Logger.LogInformation("HandleValidSubmit called");
+    }
 }

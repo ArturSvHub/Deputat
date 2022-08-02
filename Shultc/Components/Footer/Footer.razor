@@ -1,6 +1,30 @@
 ﻿@ChildContent
-
+<div class="footer-wrapper">
+    <div class="footer-nav">
+        <div class="navlink-footer">
+            <NavLink href="#home">Главная</NavLink>
+        </div>
+        <div class="navlink-footer">
+            <NavLink href="about#about">Автобиография</NavLink>
+        </div>
+        <div class="navlink-footer">
+            <NavLink href="missions#missions">Цели и задачи</NavLink>
+        </div>
+        <div class="navlink-footer">
+            <NavLink href="projects#projects">Проекты</NavLink>
+        </div>
+        <div class="navlink-footer">
+            <NavLink href="achievements#achievements">Достижения</NavLink>
+        </div>
+        <div class="navlink-footer">
+            <NavLink href="reception#reception">Виртуальная приёмная</NavLink>
+        </div>
+    </div>
+    <div class="footer-description">
+        <span>Пишите обращения в виртуальную приёмную по ссылке: <NavLink href="reception">Виртуальная приёмная</NavLink></span>
+    </div>
+</div>
 @code {
     [Parameter]
-    public RenderFragment ChildContent{ get; set; }
+    public RenderFragment ChildContent { get; set; }
 }

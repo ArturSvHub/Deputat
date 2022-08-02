@@ -1,4 +1,10 @@
-﻿* {
+﻿/*
+@font-face {
+    font-family: 'MeiryoUI';
+    src: local('MeiryoUI') url('../scss/fonts/Meiryo UI W53 Regular.ttf') format('truetype');
+}
+*/
+p, a, span {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -11,4 +17,8 @@ a {
 ul,
 li {
   list-style-type: none;
+}
+
+.onpage {
+  padding-top: 100px;
 }

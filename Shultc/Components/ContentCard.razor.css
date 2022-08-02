@@ -1,9 +1,9 @@
 ﻿
 .content-card{
     text-decoration: none;
-    padding: 2%;
-    
-    min-width: 30%;
+    padding: 0;
+    position:relative;
+    width: 30%;
 }
     ::deep.content-card a {
         display: flex;
@@ -18,11 +18,14 @@
     opacity: 0.7;
 }
 .content-card a span {
+    text-transform:uppercase;
+    position:absolute;
+    bottom:5%;
    text-align:center;
     text-decoration: none;
     color: white;
     align-self:center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size:2em;
 }
 .content-card a img:hover {
