@@ -1,0 +1,16 @@
+﻿<div class="content-card">
+<NavLink href="@Href" >
+<img src="@ImageSrc" alt="@ImageAlt" />
+    <span class="span">@Name</span>
+</NavLink>
+</div>
+@code {
+    [Parameter]
+    public string? Href { get; set; } = "#";
+    [Parameter]
+    public string? ImageSrc { get; set; } = "";
+    [Parameter]
+    public string? ImageAlt { get; set; } = "";
+    [Parameter]
+    public string? Name { get; set; } = "";
+}

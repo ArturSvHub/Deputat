@@ -1,8 +1,4 @@
 ﻿.navmenu-margin {
-    height: 10%;
+    height: 0;
 }
-.header-flag {
-    width:100%;
-    height: 100vh;
-    background-image: linear-gradient(177deg,#c8c8c8,#1a284f,#710c10);
-}
+

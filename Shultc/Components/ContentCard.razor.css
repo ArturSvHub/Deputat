@@ -1,0 +1,30 @@
+﻿
+.content-card{
+    text-decoration: none;
+    padding: 2%;
+    
+    min-width: 30%;
+}
+    ::deep.content-card a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+.content-card a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.content-card a span {
+   text-align:center;
+    text-decoration: none;
+    color: white;
+    align-self:center;
+    margin-bottom: 20px;
+    font-size:2em;
+}
+.content-card a img:hover {
+    opacity: 1;
+}
