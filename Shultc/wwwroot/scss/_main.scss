@@ -1,13 +1,12 @@
-﻿/*
-@font-face {
-    font-family: 'MeiryoUI';
-    src: local('MeiryoUI') url('fonts/Meiryo UI W53 Regular.ttf') format('truetype');
-}
-*/
-p,a, span {
+﻿@import url('https://fonts.googleapis.com/css2?family=Commissioner&family=Inter&family=Source+Sans+3&display=swap');
+
+p, a, span {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    /*font-family: 'Commissioner', sans-serif;*/
+    font-family: 'Inter', sans-serif;
+    /*font-family: 'Source Sans 3', sans-serif;*/
 }
 a{
     text-decoration:none;
