@@ -3,9 +3,9 @@ p, a, span {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  /*font-family: 'Commissioner', sans-serif;*/
-  font-family: "Inter", sans-serif;
-  /*font-family: 'Source Sans 3', sans-serif;*/
+  /*font-family: 'Commissioner', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;*/
 }
 
 a {

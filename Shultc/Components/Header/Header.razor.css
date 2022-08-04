@@ -2,3 +2,21 @@
     height: 0;
 }
 
+.temp{
+   background-color:rgba(0,0,0,0);
+}
+    .tmpb1 {
+        position:absolute;
+        top:400px;
+        left:10px;
+    }
+.tmpb2 {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+}
+.tmpb3 {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}

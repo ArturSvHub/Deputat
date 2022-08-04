@@ -23,8 +23,19 @@
     <div class="footer-description">
         <span>Пишите обращения в виртуальную приёмную по ссылке: <NavLink href="reception">Виртуальная приёмная</NavLink></span>
     </div>
+    <div class="tmp">
+        <button class="btn btn-primary tmpb1" @onclick="@(e=>ButtonClickCallback.InvokeAsync(sourseSans))">sourseSans</button>
+        <button class="btn btn-primary tmpb2" @onclick="@(e=>ButtonClickCallback.InvokeAsync(commissioner))">commissioner</button>
+        <button class="btn btn-primary tmpb3" @onclick="@(e=>ButtonClickCallback.InvokeAsync(inter))">inter</button>
+    </div>
 </div>
 @code {
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+    private string? fontFamily = "";
+    private string? sourseSans = "sourceSans3";
+    private string? commissioner = "commissioner";
+    private string? inter = "inter";
+    [Parameter]
+    public EventCallback<string> ButtonClickCallback { get; set; }
 }

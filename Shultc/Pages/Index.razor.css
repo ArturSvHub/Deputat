@@ -3,11 +3,21 @@
     font-family: 'CentSchbkCyrillBT';
     src: url('fonts/CentSchbkCyrillBT.ttf') format('truetype');
 }
-
+/*font-family: 'Commissioner', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;*/
+.sourceSans3 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+.commissioner {
+    font-family: 'Commissioner', sans-serif;
+}
+.inter {
+    font-family: 'Inter', sans-serif;
+}
 .header-wrapper {
-    
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     width: 100%;
     height: 100%;
 }

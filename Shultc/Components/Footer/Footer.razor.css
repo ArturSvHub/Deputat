@@ -6,6 +6,23 @@
     justify-content:start;
     align-items:center;
 }
+.sourceSans3 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.commissioner {
+    font-family: 'Commissioner', sans-serif;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+.tmp{
+    display:flex;
+    justify-content:center;
+    padding-bottom:100px;
+    margin-top:-100px;
+}
 .footer-nav {
     margin:5% 0 2% 0;
     width:100%;

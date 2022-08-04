@@ -1,7 +1,7 @@
 ﻿@using Shultc.Components.Header
 
 <NavBurger/>
-<nav class="nav">
+<nav class="nav @FontFamily">
     <div class="navlink-header ">
         <NavLink href="#home">Главная</NavLink>
     </div>
@@ -21,3 +21,7 @@
         <NavLink href="reception#reception">Виртуальная приёмная</NavLink>
     </div>
 </nav>
+@code{
+    [Parameter]
+    public string? FontFamily { get; set; }
+}

@@ -34,6 +34,17 @@
     
 
 }
+.sourceSans3 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.commissioner {
+    font-family: 'Commissioner', sans-serif;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
     ::deep.navlink-header a:hover {
         color: red;
     }
