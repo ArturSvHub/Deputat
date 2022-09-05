@@ -9,24 +9,29 @@
 .sourceSans3 {
     font-family: 'Source Sans 3', sans-serif;
 }
+
 .commissioner {
     font-family: 'Commissioner', sans-serif;
 }
+
 .inter {
     font-family: 'Inter', sans-serif;
 }
+
 .header-wrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
 }
-.main-wrapper{
-    padding:0;
+
+.main-wrapper {
+    padding: 0;
 }
+
 .main-flag {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(177deg,#c8c8c8,#1a284f,#710c10);
     background-attachment: fixed;
 }
@@ -40,7 +45,7 @@
     width: 40%;
     padding: 0 5% 2% 0;
     font-size: 2em;
-    font-family:'CentSchbkCyrillBT';
+    font-family: 'CentSchbkCyrillBT';
 }
 
     .description .surname {
@@ -50,23 +55,24 @@
     .description .second-name {
         font-size: 2em;
         margin-bottom: 10%;
-        text-align:end;
+        text-align: end;
     }
 
     .description span {
         font-family: 'CentSchbkCyrillBT';
+        text-align:end;
     }
-
-.portrait {
-    
+        .description span span {
+            white-space:nowrap;
+        }
+        .portrait {
     padding: 0;
     margin: 5% 0 0 0;
     width: 50%;
-    align-self:end;
+    align-self: end;
 }
 
 .img-wrapper {
-    
     width: 100%;
     height: 100%;
 }
@@ -77,13 +83,13 @@
         width: 100%;
         height: 100%;
     }
+
 #main {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    
 }
 
 .content {
@@ -91,30 +97,117 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width:90%;
+    width: 95%;
     height: 100%;
 }
-.content-row{
-    padding:2% 0 3% 0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:100%;
+
+.content-row {
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    height: 100%;
 }
-::deep.content-row a{
-    width:100%;
+
+::deep.content-row a {
+    width: 100%;
 }
+
 .content-description {
-    margin:0;
+    margin: 0;
     padding: 5%;
-    min-width:100%;
+    min-width: 100%;
     align-self: center;
     justify-self: center;
     background-color: rgb(138,154,166);
-    display:flex;
-    flex-direction:column;
-    align-items:start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.content-description h5{
-    align-self:center;
+
+    .content-description h5 {
+        align-self: center;
+    }
+
+@media (max-width: 1200px) {
+    .main-flag {
+        height: 100%;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+        .description .surname {
+            font-size: 2.7em;
+        }
+
+        .description .second-name {
+            font-size: 1.8em;
+        }
 }
+
+@media(max-width:768px) {
+    .description {
+        font-size: 1em;
+
+    }
+
+        .description .surname {
+            font-size: 2em;
+        }
+
+        .description .second-name {
+            font-size: 1.4em;
+        }
+}
+@media(max-width:600px) {
+    .content-row {
+        width:100%;
+    }
+    .header-wrapper{
+        flex-direction:column-reverse;
+    }
+    .portrait {
+        padding: 0;
+        margin: 5% 0 0 0;
+        width: 60%;
+        align-self: center;
+    }
+    .description{
+        width:80%;
+        flex-direction:row;
+        flex-wrap:wrap;
+        position:relative;
+        margin:0;
+        align-self:center;
+        justify-content:center;
+        align-items:center;
+    }
+        .description .surname {
+            margin: 0;
+            width:100%;
+            text-align:center;
+        }
+
+        .description .second-name {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    .main-flag {
+        margin:0 auto auto auto;
+        width: 90%;
+        height: 90%;
+        background-image: linear-gradient(177deg,#c8c8c8,#1a284f,#710c10);
+        background-attachment: fixed;
+    }
+    .description span {
+        text-align:center;
+    }
+    .description span span{
+        font-size:1.4em;
+    }
+    }

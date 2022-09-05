@@ -4,6 +4,7 @@
     padding: 0;
     position:relative;
     width: 30%;
+    padding: 15px 0 15px 0;
 }
     ::deep.content-card a {
         display: flex;
@@ -30,4 +31,31 @@
 }
 .content-card a img:hover {
     opacity: 1;
+}
+@media(max-width:1200px) {
+    .content-card a span {
+        font-size: 1.5em;
+    }
+}
+@media(max-width:768px) {
+    .content-card a span {
+        font-size: 1em;
+    }
+}
+@media(max-width:600px) {
+    .content-card{
+        width:50%;
+        padding:10px;
+    }
+}
+@media(max-width:600px) {
+    .content-card a span {
+        font-size: 0.8em;
+    }
+}
+@media(max-width:400px) {
+    .content-card {
+        width: 100%;
+        padding: 10px;
+    }
 }

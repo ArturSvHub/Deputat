@@ -34,9 +34,10 @@
 .footer-description {
     color: white;
     font-size: 2em;
-    margin:0 0 7% 0;
-    align-self:center;
-    justify-self:center;
+    margin: 0 0 7% 0;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 ::deep.footer-description a {
     color: white;
@@ -62,4 +63,19 @@
 ::deep.navlink-footer a:hover{
     color:red;
 }
+@media(max-width:1200px) {
+
+}
+
+@media(max-width:768px) {
+    .footer-nav{
+        flex-direction:column;
+    }
+    .footer-description {
+        font-size: 1.2em;
+    }
+    .navlink-footer {
+        padding: 5px 0;
+    }
+    }
 
